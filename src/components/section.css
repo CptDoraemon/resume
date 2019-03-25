@@ -1,0 +1,15 @@
+.section-wrapper {
+    width: 100%;
+}
+.item-wrapper {
+    position: relative;
+    width: 100%;
+}
+.item-link {
+    color: rgb(200, 200, 200);
+}
+.item-year {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

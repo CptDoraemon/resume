@@ -1,0 +1,74 @@
+body {
+    width: 100vw;
+    max-width: 100%;
+    background-color: black;
+    min-height: 300mm;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}
+h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: rgb(29, 161, 242);
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+    margin: 0;
+    padding: 0;
+}
+p {
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.letter-size {
+    /* 216mm * 279mm */
+    /* 2.54cm = 25.4mm margins */
+    background-color: white;
+    padding: 25.4mm;
+    width: calc(216mm - 25.4mm * 2);
+    height: calc(279mm - 25.4mm * 2);
+}
+.resume-header {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.resume-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
