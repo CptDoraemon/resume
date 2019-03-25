@@ -12,6 +12,7 @@ class App extends Component {
                 <Switch>
                     <ScrollToTop>
                         <Route path="/" exact render={(props) => <Resume {...props} />} />
+                        <Route path="/fintech" exact render={(props) => <Resume {...props} isFinTech={true}/>} />
                     </ScrollToTop>
                 </Switch>
             </Router>

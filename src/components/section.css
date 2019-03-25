@@ -4,12 +4,26 @@
 .item-wrapper {
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
+}
+.item-wrapper:last-child {
+    margin-bottom: 0;
+}
+.items-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px 0 10px 0;
 }
 .item-link {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
 }
 .item-year {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 3px;
+}
+.item-wrapper h3 {
+    width: 90%;
 }

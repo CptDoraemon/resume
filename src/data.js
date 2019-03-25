@@ -27,9 +27,12 @@ const data = {
             link: 'http://riddet.xiaoxihome.com/',
             linkText: 'riddet.xiaoxihome.com',
             features: [
-                '1111111',
-                '2222222',
-                '3333333',
+                'A content sharing website, built with MongoDB, Express, React, and Node.js',
+                'Register, login, password updating functions, cookie is used for session tracking',
+                'Users are able to vote, comment, share, save, hide and report posts, and to manage history operations in setting page',
+                'Nested comments structure for easy reading and replying',
+                'A lightweight Markdown editor and parser',
+                'Several feeds layouts and sort algorithm, user preferences are saved to localStorage'
             ]
         },
         1: {
@@ -37,9 +40,11 @@ const data = {
             link: 'http://raycaster.xiaoxihome.com/',
             linkText: 'raycaster.xiaoxihome.com',
             features: [
-                '1111111',
-                '2222222',
-                '3333333',
+                'A first person shooter multiplayer online game in browser',
+                'Powered by a raycaster algorithm written from scratch',
+                'Built in components, bundled with Webpack',
+                'Uses Websocket for server communications',
+                'Performance optimized, targeting stable 60 fps on mid-range laptops',
             ]
         },
         2: {
@@ -47,29 +52,41 @@ const data = {
             link: 'https://www.xiaoxihome.com/',
             linkText: 'xiaoxihome.com',
             features: [
-                '1111111',
-                '2222222',
-                '3333333',
+                'MERN stack',
+                'Modules have no external dependencies: one-page-scroll about page, and photo gallery',
+                'All images are lazyloaded',
+                'Data are striped away from view, and stored in JSON format',
+                'Responsive web design',
             ]
         }
     },
     education: {
         0: {
+            name: 'CFA, Chartered Financial Analyst Level I Exam passed',
+            year: '2018',
+            isFinTech: '1'
+        },
+        1: {
+            name: 'FRM, Financial Risk Manager Level I Exam passed',
+            year: '2018',
+            isFinTech: '1'
+        },
+        2: {
             name: 'M.A. Economics',
             name1: 'York University',
             year: '2016-2017',
             features: [
-                'aaaaaaa',
-                'bbbbbbbb'
+                'York University Graduate Scholarship',
+                'York University Graduate Fellowship'
             ]
         },
-        1: {
+        3: {
             name: 'B.A. Financial & Business Economics',
             name1: 'York University',
             year: '2013-2015',
             features: [
-                'aaaaaaa',
-                'bbbbbbbb'
+                'Member of Dean\'s Honour Roll',
+                'GPA: 3.5/4.0'
             ]
         }
     },
@@ -79,8 +96,9 @@ const data = {
             name1: 'York University',
             year: '2016-2017',
             features: [
-                'aaaaaaa',
-                'bbbbbbbb'
+                'Held office hours to provide academic support to students',
+                'Assisted course instructor to prepare exam papers, corrected errors in previous years\' template',
+                'Invigilated examinations and graded exams'
             ]
         }
     },

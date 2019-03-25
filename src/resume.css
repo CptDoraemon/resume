@@ -1,42 +1,53 @@
+@page {
+    margin: 0;
+}
 body {
     width: 100vw;
     max-width: 100%;
     background-color: black;
-    min-height: 300mm;
-    font-family: 'Roboto', sans-serif;
+    min-height: 279mm;
+    font-family: 'Hind', sans-serif;
     margin: 0;
     padding: 0;
+    -webkit-print-color-adjust: exact;
 
     font-weight: 400;
     font-size: 12px;
+    line-height: 1.5em;
     color: rgb(100, 100, 100);
 }
 h1 {
     font-size: 36px;
-    letter-spacing: 1px;
-    font-weight: 900;
+    line-height: 1.5em;
+    font-weight: 700;
     color: rgb(29, 161, 242);
     margin: 0;
     padding: 0;
 }
 h2 {
-    font-size: 24px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    color: rgb(200, 200, 200);
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: rgb(29, 161, 242);
+    border: 2px solid rgb(29, 161, 242);
+    border-radius: 5px;
+    padding-top: 2px;
 }
 h3 {
     font-size: 16px;
-    font-weight: 700;
+    line-height: 1em;
+    font-weight: 600;
     color: rgb(100, 100, 100);
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
 }
 h4 {
     font-size: 12px;
-    font-weight: 700;
+    line-height: 1.5em;
+    font-weight: 600;
     color: rgb(100, 100, 100);
     margin: 0;
     padding: 0;
@@ -47,6 +58,21 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 1em;
+}
+ul > li:before {
+    display: inline-block;
+    content: '-';
+    width: 1em;
+    margin-left: -1em;
+}
+li {
+    margin: 5px 0;
+}
 .letter-size {
     /* 216mm * 279mm */
     /* 2.54cm = 25.4mm margins */
@@ -54,6 +80,7 @@ a {
     padding: 25.4mm;
     width: calc(216mm - 25.4mm * 2);
     height: calc(279mm - 25.4mm * 2);
+    position: relative;
 }
 .resume-header {
     position: relative;
@@ -64,11 +91,30 @@ a {
     align-items: flex-end;
     justify-content: space-between;
 }
-.resume-body {
+.resume-body-wrapper {
     width: 100%;
+    height: calc(100% - 8% - 2%);
+    margin-top: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+}
+.resume-body-left {
+    width: calc(60% - 10mm);
+    height: 100%;
+    margin-right: 10mm;
+}
+.resume-body-right {
+    height: 100%;
+    width: 40%;
+}
+.info {
+    font-size: 8px;
+    line-height: 8px;
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    color: rgb(230, 230, 230);
 }
 

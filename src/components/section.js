@@ -25,7 +25,7 @@ function Item(props) {
 
     // items
     const items = data.features
-        ? data.features.map(i => <div key={i}>{i}</div>)
+        ? data.features.map(i => <li key={i}>{i}</li>)
         : null;
 
 
@@ -35,24 +35,30 @@ function Item(props) {
             { name1 }
             { link }
             { year }
-            <div>
+            <ul>
                 { items }
-            </div>
+            </ul>
         </div>
     )
 }
 function Section(props) {
     const items = [];
     const dataObj = data[props.sectionDataKey];
-    for (let item in dataObj) {
-        if (dataObj.hasOwnProperty(item)) {
-            items.push(dataObj[item])
+    for (let key in dataObj) {
+        if (dataObj.hasOwnProperty(key)) {
+            const value = dataObj[key];
+
+            if (props.isFinTech) {
+                items.push(value)
+            } else {
+                if (!value.isFinTech || value.isFinTech === undefined) items.push(value)
+            }
         }
     }
     return (
         <div className='section-wrapper'>
             <h2>{ props.sectionTitle }</h2>
-            <div>
+            <div className='items-wrapper'>
                 { items.map(i =>
                     <Item key={i.name} data={i}/>
                     )
