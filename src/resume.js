@@ -12,7 +12,7 @@ function BuildInfo(props) {
     const dateText = '' + date.getFullYear() + month + day;
 
     return (
-        <div className='info'>
+        <div className='info' onClick={props.changeVersionHandler}>
             buildDate: {dateText}, isFinTech: {props.isFinTech ? 'true' : 'false'}
         </div>
     )
@@ -38,7 +38,7 @@ class Resume extends React.Component {
                         <Toolbox/>
                     </div>
                 </div>
-                <BuildInfo isFinTech={this.props.isFinTech}/>
+                <BuildInfo isFinTech={this.props.isFinTech} changeVersionHandler={this.props.changeVersionHandler}/>
             </div>
         )
     }

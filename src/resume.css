@@ -108,11 +108,13 @@ li {
     width: 40%;
 }
 .info {
-    font-size: 8px;
-    line-height: 8px;
     position: absolute;
     right: 2px;
     bottom: 0;
-    color: rgb(230, 230, 230);
+    color: white;
+    cursor: pointer;
+}
+.info:hover {
+    color: black;
 }
 
