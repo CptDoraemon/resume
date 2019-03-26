@@ -14,7 +14,7 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5em;
-    color: rgb(100, 100, 100);
+    color: rgb(50, 50, 50);
 }
 h1 {
     font-size: 36px;
@@ -40,7 +40,7 @@ h3 {
     font-size: 16px;
     line-height: 1em;
     font-weight: 600;
-    color: rgb(100, 100, 100);
+    color: rgb(50, 50, 50);
     margin: 5px 0;
     padding: 0;
 }
@@ -48,7 +48,7 @@ h4 {
     font-size: 12px;
     line-height: 1.5em;
     font-weight: 600;
-    color: rgb(100, 100, 100);
+    color: rgb(50, 50, 50);
     margin: 0;
     padding: 0;
 }
