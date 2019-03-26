@@ -4,6 +4,14 @@ import { data } from "../data";
 
 function Item(props) {
     const data = props.data;
+    // if title
+    const title = data.name
+        ? <h3>{data.name}</h3>
+        : null;
+    // if description
+    const description = data.description
+        ? <div className='item-link'> { data.description } </div>
+        : null;
     // if link
     const link = data.link
         ? <div className='item-link'>
@@ -25,19 +33,18 @@ function Item(props) {
 
     // items
     const items = data.features
-        ? data.features.map(i => <li key={i}>{i}</li>)
+        ? <ul> { data.features.map(i => <li key={i}>{i}</li>) } </ul>
         : null;
 
 
     return (
         <div className='item-wrapper'>
-            <h3>{data.name}</h3>
+            { title }
+            { description }
             { name1 }
             { link }
             { year }
-            <ul>
-                { items }
-            </ul>
+            { items }
         </div>
     )
 }
@@ -47,7 +54,6 @@ function Section(props) {
     for (let key in dataObj) {
         if (dataObj.hasOwnProperty(key)) {
             const value = dataObj[key];
-
             if (props.isFinTech) {
                 items.push(value)
             } else {

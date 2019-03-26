@@ -27,7 +27,10 @@ class Resume extends React.Component {
                 </div>
                 <div className='resume-body-wrapper'>
                     <div className='resume-body-left'>
-                        <Section sectionDataKey='projects' sectionTitle='Project Experiences' />
+                        <Section
+                            sectionDataKey='projects'
+                            sectionTitle='Project Experiences'
+                        />
                     </div>
                     <div className='resume-body-right'>
                         <Section sectionDataKey='education' sectionTitle='Educations' isFinTech={this.props.isFinTech} />

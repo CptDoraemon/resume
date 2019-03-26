@@ -23,40 +23,43 @@ const data = {
     },
     projects: {
         0: {
+            description: 'Followings are my personal projects, highlighted features or modules are built from scratch and have no external dependencies by design'
+        },
+        1: {
             name: 'Reddit-like Website',
             link: 'http://riddet.xiaoxihome.com/',
             linkText: 'riddet.xiaoxihome.com',
             features: [
                 'A content sharing website, built with MongoDB, Express, React, and Node.js',
-                'Register, login, password updating functions, cookie is used for session tracking',
-                'Users are able to vote, comment, share, save, hide and report posts, and to manage history operations in setting page',
+                'Users are able to register, login, and update passwords, cookie is used for session tracking',
+                'Users are able to vote, comment, share, save, hide and report posts, and to manage history operations in centralized setting hub',
                 'Nested comments structure for easy reading and replying',
-                'A lightweight Markdown editor and parser',
-                'Several feeds layouts and sort algorithm, user preferences are saved to localStorage'
+                'A lightweight Markdown editor and parser for text decorations',
+                'Several feeds layouts and sort algorithms, user preferences are saved to localStorage'
             ]
         },
-        1: {
+        2: {
             name: 'RaycasterJS',
             link: 'http://raycaster.xiaoxihome.com/',
             linkText: 'raycaster.xiaoxihome.com',
             features: [
                 'A first person shooter multiplayer online game in browser',
-                'Powered by a raycaster algorithm written from scratch',
+                'Powered by a raycaster algorithm for pseudo 3D rendering',
                 'Built in components, bundled with Webpack',
-                'Uses Websocket for server communications',
+                'Uses WebSocket for server communications',
                 'Performance optimized, targeting stable 60 fps on mid-range laptops',
             ]
         },
-        2: {
+        3: {
             name: 'Xiaoxihome',
             link: 'https://www.xiaoxihome.com/',
             linkText: 'xiaoxihome.com',
             features: [
-                'MERN stack',
-                'Modules have no external dependencies: one-page-scroll about page, and photo gallery',
+                'A portfolios website, built with MERN stack',
+                'Includes an one-page-scroll about page',
+                'Includes an easy navigation and mobile friendly photo gallery',
                 'All images are lazyloaded',
-                'Data are striped away from view, and stored in JSON format',
-                'Responsive web design',
+                'Data are striped away from the view, and stored in JSON format'
             ]
         }
     },
