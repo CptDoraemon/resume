@@ -23,7 +23,7 @@ const data = {
     },
     projects: {
         0: {
-            description: 'Followings are my personal projects, highlighted features or modules are built from scratch and have no external dependencies by design'
+            description: 'Followings are my personal projects, highlighted features and modules are built from scratch and have no external dependencies by design'
         },
         1: {
             name: 'Reddit-like Website',
@@ -32,7 +32,7 @@ const data = {
             features: [
                 'A content sharing website, built with MongoDB, Express, React, and Node.js',
                 'Users are able to register, login, and update passwords, cookie is used for session tracking',
-                'Users are able to vote, comment, share, save, hide and report posts, and to manage history operations in centralized setting hub',
+                'Users are able to vote, comment, share, save, hide, report and search posts, and to manage history operations in centralized setting hub',
                 'Nested comments structure for easy reading and replying',
                 'A lightweight Markdown editor and parser for text decorations',
                 'Several feeds layouts and sort algorithms, user preferences are saved to localStorage'
@@ -47,7 +47,7 @@ const data = {
                 'Powered by a raycaster algorithm for pseudo 3D rendering',
                 'Built in components, bundled with Webpack',
                 'Uses WebSocket for server communications',
-                'Performance optimized, targeting stable 60 fps on mid-range laptops',
+                'Performance optimized, targeting stable 60 fps full-screen on mid-range laptops',
             ]
         },
         3: {
@@ -67,12 +67,12 @@ const data = {
         0: {
             name: 'CFA, Chartered Financial Analyst Level I Exam passed',
             year: '2018',
-            isFinTech: '1'
+            isFinTech: true
         },
         1: {
             name: 'FRM, Financial Risk Manager Level I Exam passed',
             year: '2018',
-            isFinTech: '1'
+            isFinTech: true
         },
         2: {
             name: 'M.A. Economics',
@@ -100,7 +100,7 @@ const data = {
             year: '2016-2017',
             features: [
                 'Held office hours to provide academic support to students',
-                'Assisted course instructor to prepare exam papers, corrected errors in previous years\' template',
+                'Assisted course instructor to prepare exam papers, corrected errors in previous years\' templates',
                 'Invigilated examinations and graded exams'
             ]
         }
