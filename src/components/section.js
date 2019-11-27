@@ -57,7 +57,7 @@ function Section(props) {
             if (props.isFinTech) {
                 items.push(value)
             } else {
-                if (!value.isFinTech || value.isFinTech === undefined) items.push(value)
+                if (!value.isFinTech) items.push(value)
             }
         }
     }

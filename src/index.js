@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import ScrollToTop from './scrollToTop';
 
 import { Resume } from "./resume";
 

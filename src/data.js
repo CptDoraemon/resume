@@ -23,43 +23,49 @@ const data = {
     },
     projects: {
         0: {
-            description: 'Followings are my personal projects, highlighted features and modules are built from scratch and have no external dependencies by design'
+            description: 'Following are my personal projects.'
         },
         1: {
             name: 'Reddit-like Website',
-            link: 'http://riddet.xiaoxihome.com/',
+            link: 'https://riddet.xiaoxihome.com/',
             linkText: 'riddet.xiaoxihome.com',
             features: [
-                'A content sharing website, built with MongoDB, Express, React, and Node.js',
-                'Users are able to register, login, and update passwords, cookie is used for session tracking',
-                'Users are able to vote, comment, share, save, hide, report and search posts, and to manage history operations in centralized setting hub',
-                'Nested comments structure for easy reading and replying',
-                'A lightweight Markdown editor and parser for text decorations',
-                'Several feeds layouts and sort algorithms, user preferences are saved to localStorage'
+                'A discussion website, built with MongoDB, Express, React, and Node.js',
+                'Users are able to create and manage account',
+                'Users are able to create and interact with posts such as voting and commenting',
+                'Several feeds layouts and sorting algorithms'
             ]
         },
         2: {
             name: 'RaycasterJS',
-            link: 'http://raycaster.xiaoxihome.com/',
+            link: 'https://raycaster.xiaoxihome.com/',
             linkText: 'raycaster.xiaoxihome.com',
             features: [
-                'A first person shooter multiplayer online game in browser',
+                'A first person shooter multi-player game in browser',
                 'Powered by a raycaster algorithm for pseudo 3D rendering',
-                'Built in components, bundled with Webpack',
-                'Uses WebSocket for server communications',
-                'Performance optimized, targeting stable 60 fps full-screen on mid-range laptops',
+                'Built in modules, bundled with Webpack',
+                'WebSocket used for server communications',
+                'Performance optimized, targeting stable 60 fps',
             ]
         },
-        3: {
+        4: {
+            name: 'Weather App',
+            link: 'https://cptdoraemon.github.io/weather',
+            linkText: 'cptdoraemon.github.io/weather',
+            features: [
+                'A weather app, web version built with React, mobile version built with Flutter',
+                'Third party API used for weather and location data',
+                'Data visualized to interactive charts'
+            ]
+        },
+        5: {
             name: 'Xiaoxihome',
             link: 'https://www.xiaoxihome.com/',
             linkText: 'xiaoxihome.com',
             features: [
-                'A portfolios website, built with MERN stack',
-                'Includes an one-page-scroll about page',
-                'Includes an easy navigation and mobile friendly photo gallery',
-                'All images are lazyloaded',
-                'Data are striped away from the view, and stored in JSON format'
+                'My portfolios website, built with MERN stack',
+                'Rich in animations, included a one-page-scroll introduction page and a gallery',
+                'Data are striped away from the view, and stored in JSON format for easy updating'
             ]
         }
     },
@@ -105,7 +111,12 @@ const data = {
             ]
         }
     },
-    toolbox: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'SQL', 'Webpack', 'Python', 'Stata', 'LaTeX', 'Adobe Creative Suite']
+    toolbox: [
+            ['JavaScript', 'React', 'Node.js', 'Webpack'],
+            ['Dart', 'Flutter'],
+            ['SQL', 'MongoDB'],
+            ['Python', 'Stata', 'LaTeX', 'Photoshop']
+        ]
 };
 
 export { data };
