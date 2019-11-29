@@ -64,7 +64,7 @@ const data = {
             linkText: 'xiaoxihome.com',
             features: [
                 'My portfolios website, built with MERN stack',
-                'Rich in animations, included a one-page-scroll introduction page and a gallery',
+                'Rich in animations, shipped with an one-page-scroll introduction page and a JS gallery',
                 'Data are striped away from the view, and stored in JSON format for easy updating'
             ]
         }
@@ -115,7 +115,7 @@ const data = {
             ['JavaScript', 'React', 'Node.js', 'Webpack'],
             ['Dart', 'Flutter'],
             ['SQL', 'MongoDB'],
-            ['Python', 'Stata', 'LaTeX', 'Photoshop']
+            ['Python', 'LaTeX', 'Photoshop']
         ]
 };
 

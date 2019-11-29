@@ -11,7 +11,7 @@ function Toolbox(props) {
                     const row =  array.map((item, index) => {
                         return item === 'LaTeX'
                             ? <div key={item} className='toolbox-item'><span className='latex'>L<sup>a</sup>T<sub>e</sub>X,</span></div>
-                            : index === data.toolbox.length - 1
+                            : index === array.length - 1
                                 ? <div key={item} className='toolbox-item'>{item}</div>
                                 : <div key={item} className='toolbox-item'>{item + ','}</div>
                     });
